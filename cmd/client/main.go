@@ -37,7 +37,7 @@ func (g *Game) Layout(w, h int) (int, int) {
 }
 
 func main() {
-	conn, _, err := websocket.DefaultDialer.Dial("ws://localhost:8080/ws", nil)
+	conn, _, err := websocket.DefaultDialer.Dial("ws://192.168.101.34:4321/ws", nil)
 	if err != nil {
 		panic(err)
 	}
